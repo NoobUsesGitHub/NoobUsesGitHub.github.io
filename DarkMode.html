@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oz's Business Card</title>
+    <link rel="stylesheet" href="styles dark.css" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <img
+        id="profile-image"
+        src="images/profileImage.jpg"
+        title="not me but yeah"
+        alt="Not a Portrait of Oz Ben Moshe"
+      />
+      <h1>Oz Ben Moshe</h1>
+      <h2>Full Stack Developer-Student</h2>
+
+      <div class="connections">
+        <a href="https://github.com/NoobUsesGitHub" title="github">
+          <img class="link" src="images/github-icon.png" alt="GitHub" />
+        </a>
+        <a href="https://www.linkedin.com/in/ozbenmoshe/" title="linkedIn">
+          <img class="link" src="images/linkedin-icon.png" alt="LinkedIn" />
+        </a>
+      </div>
+    </div>
+
+    <main>
+      <div>
+        <div class="section-label">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-code-icon lucide-code"
+          >
+            <path d="m16 18 6-6-6-6" />
+            <path d="m8 6-6 6 6 6" />
+          </svg>
+          <h3>About Me</h3>
+        </div>
+        <article class="about-me">
+          Hi, I'm a Full Stack Development student with a strong passion for
+          bridging the gap between complex backend systems and elegant,
+          user-friendly interfaces. My background involves blending logical
+          problem-solving with creative design, and my main areas of interest
+          include digital accessibility, responsive web design, and modern
+          front-end frameworks. Over the past year, I’ve gained hands-on
+          experience through various academic and collaborative projects. Most
+          recently, I developed 'EcoMarket'—a fully responsive, full-stack
+          e-commerce platform—and designed the UI for 'TaskFlow,' a lightweight
+          productivity app. When I'm not coding or pushing pixels, you can
+          usually find me brewing overly complicated specialty coffee, reading
+          sci-fi novels, or practicing street photography.
+        </article>
+
+        <div class="section-label">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-id-card-icon lucide-id-card"
+          >
+            <path d="M16 10h2" />
+            <path d="M16 14h2" />
+            <path d="M6.17 15a3 3 0 0 1 5.66 0" />
+            <circle cx="9" cy="11" r="2" />
+            <rect x="2" y="5" width="20" height="14" rx="2" />
+          </svg>
+          <h3>Contact</h3>
+        </div>
+        <div id="contacts">
+          <div class="contact-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-mail-icon lucide-mail"
+            >
+              <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+            </svg>
+            <span>ozbm1000@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-phone-icon lucide-phone"
+            >
+              <path
+                d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
+              />
+            </svg>
+            <span>+972517215171</span>
+          </div>
+        </div>
+
+        <hr />
+        <div class="section-label">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-layout-template-icon lucide-layout-template"
+          >
+            <rect width="18" height="7" x="3" y="3" rx="1" />
+            <rect width="9" height="7" x="3" y="14" rx="1" />
+            <rect width="5" height="7" x="16" y="14" rx="1" />
+          </svg>
+          <h3>Projects</h3>
+        </div>
+        <div class="projects">
+          <div class="project">
+            <img src="images/proj1.jpg" title="PeakLog" alt="PeakLog app screenshot" />
+            <h4>PeakLog – Bouldering & Route Tracker App</h4>
+            <article>
+              <p>
+                <strong>What it is:</strong> A mobile-first web app designed for
+                indoor climbers to log completed routes, track grading progress
+                over time, and view heatmaps of their most frequent wall styles.
+              </p>
+              <p>
+                <strong>Tech Stack:</strong> React, Node.js, Express,
+                PostgreSQL, Tailwind CSS, Framer Motion.
+              </p>
+              <p><strong>UI/UX Highlights:</strong></p>
+              <ul>
+                <li>
+                  Interactive canvas allowing users to tap holds on virtual
+                  climbing walls.
+                </li>
+                <li>
+                  Micro-animations for logging "sends" and achieving personal
+                  milestones.
+                </li>
+                <li>
+                  High-contrast dark mode designed for easy viewing under gym
+                  lighting.
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="project">
+            <img src="images/proj2.jpg" title="AtmoCast" alt="AtmoCast app screenshot" />
+            <h4>AtmoCast – Real-Time Atmospheric Weather Dashboard</h4>
+            <article>
+              <p>
+                <strong>What it is:</strong> A minimalist weather dashboard
+                integrating multiple weather APIs to visualize micro-climates,
+                UV indexes, and hourly forecasts with fluid visual feedback.
+              </p>
+              <p>
+                <strong>Tech Stack:</strong> Vue.js, Pinia, OpenWeatherMap API,
+                Tailwind CSS, Chart.js.
+              </p>
+              <p><strong>UI/UX Highlights:</strong></p>
+              <ul>
+                <li>
+                  Dynamic background themes that morph seamlessly based on
+                  real-time local conditions (sun, rain, fog).
+                </li>
+                <li>
+                  Smooth, draggable card layouts and responsive metric widgets.
+                </li>
+                <li>Fast load times optimized with client-side caching.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="project">
+            <img src="images/proj3.jpg" title="TrailPulse" alt="TrailPulse app screenshot" />
+            <h4>TrailPulse – Community Hiking Route Explorer</h4>
+            <article>
+              <p>
+                <strong>What it is:</strong> A full-stack platform where outdoor
+                enthusiasts share trail difficulty ratings, real-time weather
+                advisories, and elevation profiles.
+              </p>
+              <p>
+                <strong>Tech Stack:</strong> Next.js, TypeScript, MongoDB,
+                Leaflet.js (Mapbox), CSS Modules.
+              </p>
+              <p><strong>UI/UX Highlights:</strong></p>
+              <ul>
+                <li>
+                  Custom interactive map pins with quick-preview cards on hover.
+                </li>
+                <li>
+                  Dynamic elevation profile charts that sync with the map cursor
+                  location.
+                </li>
+                <li>
+                  Mobile-optimized offline mode for viewing saved trail
+                  summaries.
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="project">
+            <img src="images/proj4.jpg" title="FretCraft" alt="FretCraft app screenshot" />
+            <h4>FretCraft – Interactive Chord & Tab Visualizer</h4>
+            <article>
+              <p>
+                <strong>What it is:</strong> A web-based utility for guitarists
+                to practice scales, build chord progressions, and hear real-time
+                audio playback using the Web Audio API.
+              </p>
+              <p>
+                <strong>Tech Stack:</strong> Vue 3, Vite, Web Audio API,
+                SVG/Canvas rendering, Express.
+              </p>
+              <p><strong>UI/UX Highlights:</strong></p>
+              <ul>
+                <li>
+                  Animated fretboard with interactive markers that light up to
+                  show scale shapes.
+                </li>
+                <li>
+                  Clean, distraction-free playback controls with responsive
+                  metronome visualizer.
+                </li>
+                <li>
+                  Custom light/dark themes tailored for stage or bedroom
+                  practice.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <a href="index.html" title="Light Mode">
+      <img class="modeSwitcher" src="images/sun.png" />
+    </a>
+  </body>
+</html>

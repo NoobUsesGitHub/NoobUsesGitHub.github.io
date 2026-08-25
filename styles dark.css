@@ -1,0 +1,157 @@
+:root {
+  --mode: dark;
+  --color-border: #2a3a4f;
+  --color-accent: #6366f1;
+  --color-bg: #031427;
+  --color-heading: #f5f5fa;
+  --color-surface: #0b1c30;
+}
+
+.modeSwitcher {
+  width: 85px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 5px;
+}
+
+.about-me {
+  max-width: 1800px;
+  padding: 5px 5px 5px 15px;
+}
+html {
+  background-color: var(--color-bg);
+}
+h1,
+h2,
+h3 {
+  color: var(--color-heading);
+}
+body {
+  color: #c4c6d4;
+  display: flex;
+  flex-direction: row;
+  font-family: sans-serif;
+  border: 2px solid var(--color-accent);
+  border-radius: 5px;
+  background-color: var(--color-surface);
+}
+hr {
+  border-color: var(--color-border);
+}
+.sidebar {
+  display: flex;
+  border: 2px solid var(--color-border);
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--color-bg);
+}
+main {
+  border: 2px solid var(--color-border);
+}
+
+.sidebar h2 {
+  padding: 5px;
+  color: var(--color-accent);
+  background-color: var(--color-border);
+  border: 2px solid var(--color-accent);
+  border-radius: 10px;
+}
+.section-label {
+  color: var(--color-accent);
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#contacts {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-left: 10px;
+}
+
+.connections {
+  display: flex;
+  gap: 10px;
+}
+.connections a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 2px solid var(--color-border);
+  border-radius: 5px;
+}
+
+#contacts .contact-item {
+  display: flex;
+  background-color: var(--color-border);
+  border: 2px solid var(--color-accent);
+  border-radius: 10px;
+  align-items: center;
+  gap: 5px 5px;
+  padding: 5px;
+}
+
+#profile-image {
+  width: 250px;
+  border: 1px solid var(--color-accent);
+  border-radius: 5px;
+}
+
+.link {
+  width: 45px;
+}
+
+.projects img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.project {
+  background-color: var(--color-bg);
+  border: 2px solid var(--color-border);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0px 10px;
+}
+.project h4,
+.project article {
+  padding: 0px 16px;
+}
+
+.project h4 {
+  padding-top: 12px;
+}
+.project article {
+  padding-bottom: 16px;
+}
+
+
+@media (max-width: 700px) {
+  body {
+    flex-direction: column;
+  }
+  #profile-image {
+    width: 150px;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+  }
+  .modeSwitcher{
+    width: 70px;
+  }
+}
